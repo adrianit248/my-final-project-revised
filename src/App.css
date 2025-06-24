@@ -1,38 +1,155 @@
-.App {
-  text-align: center;
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  background: #141414;
+  color: #ffffff;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.movie-container{
+  margin: 0 auto;
+  width: 100%;
+  justify-content: center;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.row{
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+}
+.movie-row{
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+.movies-section{
+  margin-top: 40px;
+}
+.movie-card{
+  width: 25%;
+  margin-bottom: 20px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: start;
+}
+.movie-poster{
+  width: 75%;
+  margin: 0 auto;
+}
+.movie-title{
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  width: 85%;
+  margin: 0 auto;
+  text-align: center;
+}
+.heading{
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+h1{
+  padding-left: 40px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.form{
+  border-radius: 4px;
+  width: 300px;
+}
+.header-bar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background: url('./banner.png') no-repeat center;
+  background-size: cover;
+  margin-bottom: 20px;
+}
+.searchbar-assembly{
+  display: flex;
+  position: relative;
+  padding-right: 40px;
+}
+.magnifying-glass{
+  position: absolute;
+  right: 50px;
+  top: 10px;
+  cursor: pointer;
+}
+.magnifying-glass:hover{
+  color: lightslategray;
+}
+.image-container{
+  position: relative;
+  transition: transform 0.2s;
+  border-radius: 5px;
+}
+.image-container:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.filter-container{
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+select{
+  border-radius: 4px;
+}
+.idmovie-container{
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+.idmovie-container-all{
+}
+.back-btn{
+  margin-top: 20px;
+  margin-left: 20px;
+  padding: 12px 20px;
+  background: lightgray;
+}
+.idmovie-row{
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.idmovie-display{
+  display: flex;
+  width: 100%;
+}
+.poster-container{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.idmovie-poster{
+  width: 80%;
+}
+.idmovie-info-section{
+  width: 100%;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.loading-spinner-container{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loading-spinner{
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  margin-top: 10%;
+}
+.full-display{
+  height: 100%;
+  margin-bottom: 50px;
 }
