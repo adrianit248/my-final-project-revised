@@ -32,7 +32,7 @@ function Home(props, idVal, setIdVal) {
         setLoading(true)
 
         // Now it makes the awaited API call and unlocks the promise
-        const url = `http://www.omdbapi.com/?s=${searchValue}&apikey=${process.env.REACT_APP_API_KEY}`
+        const url = `https://www.omdbapi.com/?s=${searchValue}&apikey=${process.env.REACT_APP_API_KEY}`
         const response = await axios.get(url)
 
         // the unlocked array is further refined to reference the direct values,
