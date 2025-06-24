@@ -33,7 +33,7 @@ const Movies = (props) => {
     //  and component values for said ID, and then assigns it all as an 
     //  update to the searchMovie object variable
      const getMovie = async (filmId) => {
-        const url = `http://www.omdbapi.com/?i=${filmId}&apikey=a7004db5`
+        const url = `http://www.omdbapi.com/?i=${filmId}&apikey=${process.env.REACT_APP_API_KEY}`
         const response = await axios.get(url)
 
         const responseObject = (response.data)

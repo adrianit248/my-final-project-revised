@@ -8,6 +8,7 @@ import { useNavigate, useParams } from 'react-router-dom';
 import loading_gif from '../loading_gif.gif'
 
 
+
 function Home(props, idVal, setIdVal) {
     let navigate = useNavigate();
     const [loading, setLoading] = useState(false) 
@@ -31,7 +32,7 @@ function Home(props, idVal, setIdVal) {
         setLoading(true)
 
         // Now it makes the awaited API call and unlocks the promise
-        const url = `http://www.omdbapi.com/?s=${searchValue}&apikey=a7004db5`
+        const url = `http://www.omdbapi.com/?s=${searchValue}&apikey=${process.env.REACT_APP_API_KEY}`
         const response = await axios.get(url)
 
         // the unlocked array is further refined to reference the direct values,
