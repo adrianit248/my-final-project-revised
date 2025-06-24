@@ -153,3 +153,9 @@ select{
   height: 100%;
   margin-bottom: 50px;
 }
+@media (max-width: 650px) {
+  .movie-row {
+    flex-direction: column;
+  }
+
+}
