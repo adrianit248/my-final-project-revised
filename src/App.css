@@ -157,5 +157,8 @@ select{
   .movie-row {
     flex-direction: column;
   }
+  .movie-card {
+    width: 100%;
+  }
 
 }
