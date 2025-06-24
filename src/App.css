@@ -165,9 +165,13 @@ select{
   }
   .poster-container {
     width: 100%;
+    align-items: center;
+    justify-content: center;
   }
   .idmovie-info-section {
     width: 100%;
+    align-items: center;
+    justify-content: center;
   }
 
 }
