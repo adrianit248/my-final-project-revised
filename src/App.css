@@ -160,5 +160,14 @@ select{
   .movie-card {
     width: 100%;
   }
+  .idmovie-display {
+    flex-direction: column;
+  }
+  .poster-container {
+    width: 100%;
+  }
+  .idmovie-info-section {
+    width: 100%;
+  }
 
 }
